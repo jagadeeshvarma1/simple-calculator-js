@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple calculator</title>
+    </head>
+    <body>
+        <center>
+
+        <h2>Calculator</h2>
+        <input type="text" id="num1" placeholder="enter number:">
+        <input type="text" id="num2" placeholder="enter number:">
+        <br><br>
+
+        <button onclick="add()"><i>Add</i></button>
+        <button onclick="subtract()"><i>Subtract</i></button>
+        <button onclick="multiply()"><i>multiply</i></button>
+        <button onclick="divide()"><i>Divide</i></button>
+        <br><br>
+
+        <h3>Result:- <span id="result"></span></h3>
+
+        <script>
+            function add(){
+                var num1 = parseFloat(document.getElementById("num1").value);
+                var num2 = parseFloat(document.getElementById("num2").value);
+                document.getElementById("result").textContent = num1 + num2;
+            }
+            function subtract(){
+                var num1 = parseFloat(document.getElementById("num1").value);
+                var num2 = parseFloat(document.getElementById("num2").value);
+                document.getElementById("result").textContent = num1 - num2;
+            }
+            function multiply(){
+                var num1 = parseFloat(document.getElementById("num1").value);
+                var num2 = parseFloat(document.getElementById("num2").value);
+                document.getElementById("result").textContent = num1 * num2;
+            }
+            function divide(){
+                var num1 = parseFloat(document.getElementById("num1").value);
+                var num2 = parseFloat(document.getElementById("num2").value);
+                document.getElementById("result").textContent = num1 / num2;
+            }
+        </script>
+        </center>
+    </body>
+</html>
